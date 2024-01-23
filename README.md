@@ -2,15 +2,15 @@
 #include <string>
 #include <bitset>
 
-// Функція для зсуву бітів рядка вліво на певну величину
+
 std::string cyclicLeftShift(const std::string& text, int shift) {
     std::string shiftedText = text;
     int length = text.length();
 
-    // Виконуємо зсув для кожного символу
+
     for (int i = 0; i < length; i++) {
         char c = text[i];
-        // Зсуваємо біти символу вліво на вказану кількість разів
+       
         shiftedText[i] = text[(i + shift) % length];
     }
 
